@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>UTReaderWeb</servlet-name>
+		<servlet-class>com.web.utreader.UTReaderWebServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UTReaderWeb</servlet-name>
+		<url-pattern>/utreaderweb</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>GetNewsDetails</servlet-name>
+		<servlet-class>com.web.utreader.GetNewsDetailsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetNewsDetails</servlet-name>
+		<url-pattern>/getNewsDetails</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetComments</servlet-name>
+		<servlet-class>com.web.utreader.GetCommentsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetComments</servlet-name>
+		<url-pattern>/getComments</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>PostComments</servlet-name>
+		<servlet-class>com.web.utreader.PostCommentsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostComments</servlet-name>
+		<url-pattern>/postComments</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>GetTopics</servlet-name>
+		<servlet-class>com.web.utreader.GetTopicsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetTopics</servlet-name>
+		<url-pattern>/getTopics</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>PostTopics</servlet-name>
+		<servlet-class>com.web.utreader.PostTopicsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostTopics</servlet-name>
+		<url-pattern>/postTopics</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CheckUpdates</servlet-name>
+		<servlet-class>com.web.utreader.CheckUpdatesServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CheckUpdates</servlet-name>
+		<url-pattern>/checkupdates</url-pattern>
+	</servlet-mapping>
+
+	
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+</web-app>
